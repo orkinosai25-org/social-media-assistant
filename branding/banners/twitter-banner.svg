@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500" role="img" aria-labelledby="twitter-title twitter-desc">
-  <title id="twitter-title">SMTX — AI Social Media Assistant</title>
-  <desc id="twitter-desc">SMTX Twitter/X profile banner</desc>
+  <title id="twitter-title">SocialMediaAssistant</title>
+  <desc id="twitter-desc">SocialMediaAssistant Twitter/X profile banner</desc>
   <defs>
     <linearGradient id="bg-tw" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%"   stop-color="#0D0D1A"/>
@@ -63,14 +63,16 @@
     <circle cx="58" cy="7"  r="4.5" fill="#25D366" opacity="0.92"/>
     <circle cx="66" cy="1"  r="3"   fill="#FCAF45" opacity="0.88"/>
     <circle cx="64" cy="16" r="2.2" fill="#E1306C" opacity="0.82"/>
-    <text x="78" y="36" font-family="'Plus Jakarta Sans','Inter',sans-serif"
-          font-size="34" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF">SMTX</text>
+    <text x="78" y="26" font-family="'Plus Jakarta Sans','Inter',sans-serif"
+          font-size="11" font-weight="700" letter-spacing="-0.2" fill="#FFFFFF">Social Media</text>
+    <text x="78" y="40" font-family="'Plus Jakarta Sans','Inter',sans-serif"
+          font-size="14" font-weight="800" letter-spacing="-0.3" fill="#FFFFFF">Assistant</text>
   </g>
 
   <!-- Main headline -->
   <text x="60" y="230" font-family="'Plus Jakarta Sans','Inter',sans-serif"
-        font-size="72" font-weight="800" letter-spacing="-1.5" fill="#FFFFFF">
-    SMTX — AI Social Media Assistant
+        font-size="64" font-weight="800" letter-spacing="-1" fill="#FFFFFF">
+    SocialMediaAssistant
   </text>
 
   <!-- Sub-headline -->

@@ -1,4 +1,4 @@
-# SMTX Typography Guide
+# SocialMediaAssistant Typography Guide
 
 ## Font Pairing
 

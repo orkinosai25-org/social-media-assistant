@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60" role="img" aria-labelledby="logo-light-title logo-light-desc">
-  <title id="logo-light-title">SMTX Social Media AI Assistant — Light Variant</title>
-  <desc id="logo-light-desc">SMTX logo on light background: gradient icon with dark wordmark</desc>
+  <title id="logo-light-title">SocialMediaAssistant — Light Variant</title>
+  <desc id="logo-light-desc">SocialMediaAssistant logo on light background: gradient icon with stacked dark wordmark</desc>
   <defs>
     <linearGradient id="grad-icon-l" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%"   stop-color="#833AB4"/>
@@ -23,7 +23,10 @@
   <circle cx="54" cy="16" r="1.5" fill="#E1306C" opacity="0.82"/>
 
   <!-- Dark wordmark -->
-  <text x="68" y="40" font-family="'Plus Jakarta Sans', 'Inter', sans-serif"
-        font-size="26" font-weight="800" letter-spacing="-0.5"
-        fill="#1A1A2E">SMTX</text>
+  <text x="68" y="28" font-family="'Plus Jakarta Sans', 'Inter', sans-serif"
+        font-size="11" font-weight="700" letter-spacing="-0.2"
+        fill="#1A1A2E">Social Media</text>
+  <text x="68" y="43" font-family="'Plus Jakarta Sans', 'Inter', sans-serif"
+        font-size="14" font-weight="800" letter-spacing="-0.3"
+        fill="#1A1A2E">Assistant</text>
 </svg>

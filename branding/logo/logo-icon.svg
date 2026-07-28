@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" role="img" aria-labelledby="icon-title icon-desc">
-  <title id="icon-title">SMTX Icon</title>
-  <desc id="icon-desc">SMTX speech-bubble AI spark icon</desc>
+  <title id="icon-title">SocialMediaAssistant Icon</title>
+  <desc id="icon-desc">SocialMediaAssistant speech-bubble AI spark icon</desc>
   <defs>
     <linearGradient id="grad-icon" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%"   stop-color="#833AB4"/>

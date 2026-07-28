@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-labelledby="palette-title palette-desc">
-  <title id="palette-title">SMTX Colour Palette</title>
-  <desc id="palette-desc">SMTX brand colour palette reference sheet with hex codes and gradients</desc>
+  <title id="palette-title">SocialMediaAssistant Colour Palette</title>
+  <desc id="palette-desc">SocialMediaAssistant brand colour palette reference sheet with hex codes and gradients</desc>
   <defs>
     <linearGradient id="p-primary" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#833AB4"/>
@@ -32,9 +32,9 @@
 
   <!-- Title -->
   <text x="32" y="46" font-family="'Plus Jakarta Sans','Inter',sans-serif"
-        font-size="22" font-weight="800" fill="#1A1A2E">SMTX Brand Colour Palette</text>
+        font-size="22" font-weight="800" fill="#1A1A2E">SocialMediaAssistant Brand Colour Palette</text>
   <text x="32" y="66" font-family="'Inter',sans-serif" font-size="12" fill="#6B6B8A">
-    Design tokens • Version 1.0 • smtx.ai
+    Design tokens • Version 1.0 • socialmediaassistant.ai
   </text>
 
   <!-- ── Section: Core Brand Colours ───────────────────────── -->
