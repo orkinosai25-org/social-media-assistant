@@ -78,6 +78,8 @@ tests/
 
 ## Documentation
 
+Live demo: https://orkinosai25-org.github.io/social-media-assistant
+
 - [Feature Plan](docs/FEATURES.md)
 - [Roadmap](docs/ROADMAP.md)
 - [Tech Stack](docs/TECH_STACK.md)
