@@ -1,6 +1,6 @@
-# SMTX Branding Assets
+# SocialMediaAssistant Branding Assets
 
-Welcome to the SMTX brand asset library. This folder contains all official branding materials for the **SMTX Social Media AI Assistant** product.
+Welcome to the SocialMediaAssistant brand asset library. This folder contains all official branding materials for the **SocialMediaAssistant** product.
 
 ---
 
@@ -41,7 +41,7 @@ branding/
 
 | Element | Value |
 |---|---|
-| **Product** | SMTX — Social Media AI Assistant |
+| **Product** | SocialMediaAssistant |
 | **Tagline** | *"Your AI. Always Selling."* |
 | **Primary colour** | `#833AB4` Purple → `#E1306C` Pink gradient |
 | **Secondary** | `#1877F2` Facebook Blue |
@@ -82,7 +82,7 @@ Use as an app icon, browser favicon, social media profile picture, or any contex
 ### `banners/og-image.svg`
 1200×630px. Use as the `og:image` meta tag image for all website pages. Convert to PNG for compatibility:
 ```html
-<meta property="og:image" content="https://smtx.ai/og-image.png">
+<meta property="og:image" content="https://socialmediaassistant.ai/og-image.png">
 ```
 
 ### `colours/palette.svg`
@@ -145,7 +145,7 @@ Export as PNG at 1× for direct Story upload.
 - [ ] Dark background is `#0D0D1A`, not pure black `#000000`
 - [ ] Chat bubble motif is present as a decorative element
 - [ ] Text contrast meets WCAG AA (4.5:1 minimum)
-- [ ] SMTX logo appears in the asset
+- [ ] SocialMediaAssistant logo appears in the asset
 
 ---
 

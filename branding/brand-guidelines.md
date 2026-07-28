@@ -1,7 +1,7 @@
-# SMTX Brand Guidelines
+# SocialMediaAssistant Brand Guidelines
 
 **Version:** 1.0  
-**Product:** SMTX — Social Media AI Assistant  
+**Product:** SocialMediaAssistant — Social Media AI Assistant  
 **Tagline:** *"Your AI. Always Selling."*
 
 ---
@@ -9,7 +9,7 @@
 ## 1. Brand Story & Mission
 
 ### Origin
-SMTX was born from a simple truth: boutique sellers on Instagram, WhatsApp and Facebook spend hours every day answering the same questions — *"Is this in stock? What size is this? How much for delivery?"* — while missing new sales that arrive at 2 AM.
+SocialMediaAssistant was born from a simple truth: boutique sellers on Instagram, WhatsApp and Facebook spend hours every day answering the same questions — *"Is this in stock? What size is this? How much for delivery?"* — while missing new sales that arrive at 2 AM.
 
 ### Mission
 To give every independent seller an AI assistant that never sleeps, never misses a message, and always knows what's in stock — so they can focus on their business, not their inbox.
@@ -18,7 +18,7 @@ To give every independent seller an AI assistant that never sleeps, never misses
 To be the world's most trusted AI messaging layer for social commerce, starting in Turkey, scaling to the UK, UAE, and every market where small sellers hustle on social media.
 
 ### Values
-| Value | What it means for SMTX |
+| Value | What it means for SocialMediaAssistant |
 |---|---|
 | **Trustworthy** | Sellers hand us the keys to their customer conversations — we earn that trust every day. |
 | **Smart** | Our AI must feel intelligent, not robotic. Every reply should sound human. |
@@ -31,8 +31,8 @@ To be the world's most trusted AI messaging layer for social commerce, starting 
 
 | Element | Value |
 |---|---|
-| **Product name** | SMTX |
-| **Full name** | SMTX Social Media AI Assistant |
+| **Product name** | SocialMediaAssistant |
+| **Full name** | SocialMediaAssistant |
 | **Tagline** | *"Your AI. Always Selling."* |
 | **Target users** | Boutique Instagram/Facebook/WhatsApp sellers |
 | **Categories** | SaaS, AI, Social Commerce, CRM |
@@ -89,7 +89,7 @@ Our palette blends the iconic colours of Instagram, Facebook, and WhatsApp into 
 
 ## 4. Gradients
 
-Gradients are the primary visual motif of SMTX. They should appear on hero sections, buttons, icons, and decorative elements.
+Gradients are the primary visual motif of SocialMediaAssistant. They should appear on hero sections, buttons, icons, and decorative elements.
 
 ### 4.1 Primary Hero Gradient
 ```
@@ -137,7 +137,7 @@ CSS:    linear-gradient(135deg, #833AB4 0%, #E1306C 33%, #1877F2 66%, #25D366 10
 
 ### 5.2 Logo Anatomy
 - **Icon:** Overlapping speech bubbles with brand gradient, plus three spark dots (green, yellow, pink) representing the three platform colours.
-- **Wordmark:** "SMTX" in Plus Jakarta Sans ExtraBold (800 weight), gradient fill on default/light variants, white on dark variant.
+- **Wordmark:** Two-line lockup — "Social Media" over "Assistant" in Plus Jakarta Sans (700/800), gradient fill on default/light variants, white on dark variant.
 
 ### 5.3 Clear Space
 Maintain minimum clear space equal to the height of the "S" in the wordmark on all sides.
@@ -199,7 +199,7 @@ See full guide: [`typography/type-scale.md`](./typography/type-scale.md)
 
 | Context | Tone | Example |
 |---|---|---|
-| **Onboarding** | Warm, welcoming, simple | "Welcome to SMTX! Let's get your first AI reply live in 3 minutes." |
+| **Onboarding** | Warm, welcoming, simple | "Welcome to SocialMediaAssistant! Let's get your first AI reply live in 3 minutes." |
 | **Dashboard** | Confident, data-driven | "24 messages replied • 3 sales assisted • ₺840 saved in staff time" |
 | **Error messages** | Calm, helpful | "Something went wrong — but your messages are safe. Try again or contact support." |
 | **Marketing copy** | Bold, energetic | "Your AI. Always Selling. While you sleep, eat, and live your life." |
@@ -307,4 +307,4 @@ Based on a 4px base unit (from CSS tokens):
 
 ---
 
-*This document is version 1.0. For questions, contact the SMTX design team.*
+*This document is version 1.0. For questions, contact the SocialMediaAssistant design team.*
