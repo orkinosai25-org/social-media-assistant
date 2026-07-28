@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-labelledby="palette-title palette-desc">
+  <title id="palette-title">SMTX Colour Palette</title>
+  <desc id="palette-desc">SMTX brand colour palette reference sheet with hex codes and gradients</desc>
+  <defs>
+    <linearGradient id="p-primary" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#833AB4"/>
+      <stop offset="50%"  stop-color="#E1306C"/>
+      <stop offset="100%" stop-color="#F77737"/>
+    </linearGradient>
+    <linearGradient id="p-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#1877F2"/>
+      <stop offset="100%" stop-color="#0A66C2"/>
+    </linearGradient>
+    <linearGradient id="p-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#25D366"/>
+      <stop offset="100%" stop-color="#075E54"/>
+    </linearGradient>
+    <linearGradient id="p-rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#833AB4"/>
+      <stop offset="33%"  stop-color="#E1306C"/>
+      <stop offset="66%"  stop-color="#1877F2"/>
+      <stop offset="100%" stop-color="#25D366"/>
+    </linearGradient>
+    <linearGradient id="p-dark-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0D0D1A"/>
+      <stop offset="100%" stop-color="#1A0533"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sheet background -->
+  <rect width="800" height="520" rx="16" fill="#F8F9FF"/>
+
+  <!-- Title -->
+  <text x="32" y="46" font-family="'Plus Jakarta Sans','Inter',sans-serif"
+        font-size="22" font-weight="800" fill="#1A1A2E">SMTX Brand Colour Palette</text>
+  <text x="32" y="66" font-family="'Inter',sans-serif" font-size="12" fill="#6B6B8A">
+    Design tokens • Version 1.0 • smtx.ai
+  </text>
+
+  <!-- ── Section: Core Brand Colours ───────────────────────── -->
+  <text x="32" y="100" font-family="'Inter',sans-serif" font-size="11" font-weight="700"
+        fill="#6B6B8A" letter-spacing="1.5">CORE BRAND COLOURS</text>
+
+  <!-- Purple -->
+  <rect x="32"  y="112" width="80" height="70" rx="10" fill="#833AB4"/>
+  <text x="72"  y="196" font-family="'Inter',sans-serif" font-size="10" fill="#1A1A2E"
+        text-anchor="middle" font-weight="700">#833AB4</text>
+  <text x="72"  y="208" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Purple</text>
+
+  <!-- Pink -->
+  <rect x="122" y="112" width="80" height="70" rx="10" fill="#E1306C"/>
+  <text x="162" y="196" font-family="'Inter',sans-serif" font-size="10" fill="#1A1A2E"
+        text-anchor="middle" font-weight="700">#E1306C</text>
+  <text x="162" y="208" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Pink</text>
+
+  <!-- Orange -->
+  <rect x="212" y="112" width="80" height="70" rx="10" fill="#F77737"/>
+  <text x="252" y="196" font-family="'Inter',sans-serif" font-size="10" fill="#1A1A2E"
+        text-anchor="middle" font-weight="700">#F77737</text>
+  <text x="252" y="208" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Orange</text>
+
+  <!-- Yellow -->
+  <rect x="302" y="112" width="80" height="70" rx="10" fill="#FCAF45"/>
+  <text x="342" y="196" font-family="'Inter',sans-serif" font-size="10" fill="#1A1A2E"
+        text-anchor="middle" font-weight="700">#FCAF45</text>
+  <text x="342" y="208" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Yellow</text>
+
+  <!-- Blue -->
+  <rect x="392" y="112" width="80" height="70" rx="10" fill="#1877F2"/>
+  <text x="432" y="196" font-family="'Inter',sans-serif" font-size="10" fill="#1A1A2E"
+        text-anchor="middle" font-weight="700">#1877F2</text>
+  <text x="432" y="208" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Blue</text>
+
+  <!-- Blue Dark -->
+  <rect x="482" y="112" width="80" height="70" rx="10" fill="#0A66C2"/>
+  <text x="522" y="196" font-family="'Inter',sans-serif" font-size="10" fill="#1A1A2E"
+        text-anchor="middle" font-weight="700">#0A66C2</text>
+  <text x="522" y="208" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Blue Dark</text>
+
+  <!-- Green -->
+  <rect x="572" y="112" width="80" height="70" rx="10" fill="#25D366"/>
+  <text x="612" y="196" font-family="'Inter',sans-serif" font-size="10" fill="#1A1A2E"
+        text-anchor="middle" font-weight="700">#25D366</text>
+  <text x="612" y="208" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Green</text>
+
+  <!-- Teal -->
+  <rect x="662" y="112" width="80" height="70" rx="10" fill="#075E54"/>
+  <text x="702" y="196" font-family="'Inter',sans-serif" font-size="10" fill="#1A1A2E"
+        text-anchor="middle" font-weight="700">#075E54</text>
+  <text x="702" y="208" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Teal</text>
+
+  <!-- ── Section: Gradients ─────────────────────────────────── -->
+  <text x="32" y="236" font-family="'Inter',sans-serif" font-size="11" font-weight="700"
+        fill="#6B6B8A" letter-spacing="1.5">GRADIENTS</text>
+
+  <!-- Primary gradient swatch -->
+  <rect x="32"  y="248" width="350" height="50" rx="10" fill="url(#p-primary)"/>
+  <text x="207" y="280" font-family="'Inter',sans-serif" font-size="10" fill="#fff"
+        text-anchor="middle" font-weight="600">#833AB4 → #E1306C → #F77737</text>
+
+  <!-- Blue gradient swatch -->
+  <rect x="32"  y="308" width="168" height="50" rx="10" fill="url(#p-blue)"/>
+  <text x="116" y="340" font-family="'Inter',sans-serif" font-size="10" fill="#fff"
+        text-anchor="middle" font-weight="600">#1877F2 → #0A66C2</text>
+
+  <!-- Green gradient swatch -->
+  <rect x="210" y="308" width="172" height="50" rx="10" fill="url(#p-green)"/>
+  <text x="296" y="340" font-family="'Inter',sans-serif" font-size="10" fill="#fff"
+        text-anchor="middle" font-weight="600">#25D366 → #075E54</text>
+
+  <!-- Rainbow gradient swatch -->
+  <rect x="392" y="248" width="368" height="50" rx="10" fill="url(#p-rainbow)"/>
+  <text x="576" y="280" font-family="'Inter',sans-serif" font-size="10" fill="#fff"
+        text-anchor="middle" font-weight="600">Rainbow — All Platforms</text>
+
+  <!-- ── Section: Backgrounds & Text ───────────────────────── -->
+  <text x="32" y="392" font-family="'Inter',sans-serif" font-size="11" font-weight="700"
+        fill="#6B6B8A" letter-spacing="1.5">BACKGROUNDS &amp; TEXT</text>
+
+  <!-- Dark BG -->
+  <rect x="32"  y="404" width="100" height="70" rx="10" fill="url(#p-dark-bg)"/>
+  <text x="82"  y="472" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">#0D0D1A</text>
+  <text x="82"  y="484" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Dark BG</text>
+
+  <!-- Surface Dark -->
+  <rect x="142" y="404" width="100" height="70" rx="10" fill="#16162A"/>
+  <text x="192" y="472" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">#16162A</text>
+  <text x="192" y="484" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Surface Dark</text>
+
+  <!-- Light BG -->
+  <rect x="252" y="404" width="100" height="70" rx="10" fill="#F8F9FF" stroke="#E0E0EC" stroke-width="1"/>
+  <text x="302" y="472" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">#F8F9FF</text>
+  <text x="302" y="484" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Light BG</text>
+
+  <!-- Text Dark -->
+  <rect x="362" y="404" width="100" height="70" rx="10" fill="#1A1A2E"/>
+  <text x="412" y="472" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">#1A1A2E</text>
+  <text x="412" y="484" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Text Dark</text>
+
+  <!-- Text Muted -->
+  <rect x="472" y="404" width="100" height="70" rx="10" fill="#6B6B8A"/>
+  <text x="522" y="472" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">#6B6B8A</text>
+  <text x="522" y="484" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Text Muted</text>
+
+  <!-- White -->
+  <rect x="582" y="404" width="100" height="70" rx="10" fill="#FFFFFF" stroke="#E0E0EC" stroke-width="1"/>
+  <text x="632" y="472" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">#FFFFFF</text>
+  <text x="632" y="484" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">White</text>
+
+  <!-- Light Muted -->
+  <rect x="692" y="404" width="78" height="70" rx="10" fill="#B0B0CC"/>
+  <text x="731" y="472" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">#B0B0CC</text>
+  <text x="731" y="484" font-family="'Inter',sans-serif" font-size="9" fill="#6B6B8A"
+        text-anchor="middle">Light Muted</text>
+</svg>

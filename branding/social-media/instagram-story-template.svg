@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920" role="img" aria-labelledby="ig-story-title ig-story-desc">
+  <title id="ig-story-title">SMTX Instagram Story Template</title>
+  <desc id="ig-story-desc">SMTX branded Instagram Story template (1080×1920)</desc>
+  <defs>
+    <linearGradient id="st-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0D0D1A"/>
+      <stop offset="50%"  stop-color="#1A0533"/>
+      <stop offset="100%" stop-color="#0D1A2E"/>
+    </linearGradient>
+    <linearGradient id="st-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#833AB4"/>
+      <stop offset="50%"  stop-color="#E1306C"/>
+      <stop offset="100%" stop-color="#F77737"/>
+    </linearGradient>
+    <linearGradient id="st-cta" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#833AB4"/>
+      <stop offset="50%"  stop-color="#E1306C"/>
+      <stop offset="100%" stop-color="#F77737"/>
+    </linearGradient>
+    <linearGradient id="st-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1877F2"/>
+      <stop offset="100%" stop-color="#0A66C2"/>
+    </linearGradient>
+    <linearGradient id="st-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#25D366"/>
+      <stop offset="100%" stop-color="#075E54"/>
+    </linearGradient>
+    <linearGradient id="st-logo-g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#833AB4"/>
+      <stop offset="50%"  stop-color="#E1306C"/>
+      <stop offset="100%" stop-color="#1877F2"/>
+    </linearGradient>
+    <linearGradient id="st-swipe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#833AB4" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#833AB4"/>
+      <stop offset="70%"  stop-color="#E1306C"/>
+      <stop offset="100%" stop-color="#F77737" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="st-glow">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="url(#st-bg)"/>
+
+  <!-- Glow orbs -->
+  <circle cx="900" cy="400"  r="420" fill="#833AB4" opacity="0.08" filter="url(#st-glow)"/>
+  <circle cx="200" cy="1400" r="300" fill="#1877F2" opacity="0.07" filter="url(#st-glow)"/>
+  <circle cx="540" cy="960"  r="360" fill="#E1306C" opacity="0.05" filter="url(#st-glow)"/>
+
+  <!-- Decorative chat bubbles — scattered -->
+  <!-- Top-right large -->
+  <rect x="760" y="100" width="280" height="200" rx="60" fill="url(#st-primary)" opacity="0.20"/>
+  <polygon points="780,300 764,356 828,300" fill="url(#st-primary)" opacity="0.20"/>
+  <!-- Top-left medium -->
+  <rect x="40"  y="280" width="200" height="140" rx="48" fill="#1877F2" opacity="0.16"/>
+  <polygon points="190,420 206,470 158,420" fill="#1877F2" opacity="0.16"/>
+  <!-- Mid-right small -->
+  <rect x="880" y="800" width="160" height="112" rx="40" fill="url(#st-green)" opacity="0.18"/>
+  <polygon points="900,912 886,956 938,912" fill="url(#st-green)" opacity="0.18"/>
+  <!-- Mid-left tiny -->
+  <rect x="40"  y="960" width="120" height="84"  rx="30" fill="#F77737" opacity="0.18"/>
+  <polygon points="58,1044 46,1084 90,1044" fill="#F77737" opacity="0.18"/>
+  <!-- Bottom-right accent -->
+  <rect x="820" y="1300" width="200" height="140" rx="48" fill="url(#st-blue)" opacity="0.16"/>
+  <polygon points="1000,1440 1018,1490 970,1440" fill="url(#st-blue)" opacity="0.16"/>
+
+  <!-- Spark dots -->
+  <circle cx="680" cy="80"   r="14" fill="#25D366" opacity="0.65"/>
+  <circle cx="760" cy="50"   r="9"  fill="#FCAF45" opacity="0.6"/>
+  <circle cx="1020" cy="600" r="11" fill="#E1306C" opacity="0.5"/>
+  <circle cx="60"   cy="700" r="8"  fill="#1877F2" opacity="0.5"/>
+  <circle cx="1040" cy="1100" r="12" fill="#833AB4" opacity="0.45"/>
+  <circle cx="60"  cy="1560" r="10" fill="#25D366" opacity="0.5"/>
+
+  <!-- ── Story progress bar (top) ──────────────────────────── -->
+  <rect x="60"  y="48" width="186" height="4" rx="2" fill="rgba(255,255,255,0.25)"/>
+  <rect x="60"  y="48" width="186" height="4" rx="2" fill="url(#st-primary)" opacity="0.9"/>
+  <rect x="258" y="48" width="186" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+  <rect x="456" y="48" width="186" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+  <rect x="654" y="48" width="186" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+  <rect x="852" y="48" width="186" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+
+  <!-- ── Logo top-left ──────────────────────────────────────── -->
+  <g transform="translate(60, 70)">
+    <rect x="0" y="0" width="46" height="32" rx="10" fill="url(#st-logo-g)" opacity="0.96"/>
+    <polygon points="7,32 3,48 22,32" fill="url(#st-logo-g)" opacity="0.86"/>
+    <rect x="20" y="20" width="34" height="24" rx="8" fill="#1877F2" opacity="0.88"/>
+    <polygon points="40,44 46,62 28,44" fill="#1877F2" opacity="0.78"/>
+    <circle cx="64" cy="7"  r="5"   fill="#25D366" opacity="0.92"/>
+    <circle cx="74" cy="1"  r="3.5" fill="#FCAF45" opacity="0.88"/>
+    <circle cx="72" cy="18" r="2.5" fill="#E1306C" opacity="0.82"/>
+    <text x="86" y="36" font-family="'Plus Jakarta Sans','Inter',sans-serif"
+          font-size="36" font-weight="800" letter-spacing="-0.5" fill="#FFFFFF">SMTX</text>
+  </g>
+
+  <!-- ── NEW badge ──────────────────────────────────────────── -->
+  <rect x="80" y="240" width="200" height="56" rx="28" fill="url(#st-primary)"/>
+  <text x="180" y="275" font-family="'Plus Jakarta Sans','Inter',sans-serif"
+        font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle"
+        letter-spacing="2">✦ NEW</text>
+
+  <!-- ── Main headline placeholder ─────────────────────────── -->
+  <rect x="80" y="660" width="920" height="120" rx="20" fill="rgba(255,255,255,0.06)"
+        stroke="rgba(255,255,255,0.14)" stroke-width="2" stroke-dasharray="10,5"/>
+  <text x="540" y="720" font-family="'Plus Jakarta Sans','Inter',sans-serif"
+        font-size="36" font-weight="800" fill="rgba(255,255,255,0.35)" text-anchor="middle">
+    YOUR HEADLINE
+  </text>
+  <text x="540" y="760" font-family="'Inter',sans-serif" font-size="22"
+        fill="rgba(255,255,255,0.22)" text-anchor="middle">
+    Supporting subtext here
+  </text>
+
+  <!-- ── Feature bullets placeholder ───────────────────────── -->
+  <rect x="80" y="830" width="920" height="280" rx="20" fill="rgba(255,255,255,0.04)"
+        stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="8,4"/>
+  <text x="540" y="920" font-family="'Inter',sans-serif" font-size="22"
+        fill="rgba(255,255,255,0.18)" text-anchor="middle">✓ Feature / benefit 1</text>
+  <text x="540" y="970" font-family="'Inter',sans-serif" font-size="22"
+        fill="rgba(255,255,255,0.18)" text-anchor="middle">✓ Feature / benefit 2</text>
+  <text x="540" y="1020" font-family="'Inter',sans-serif" font-size="22"
+        fill="rgba(255,255,255,0.18)" text-anchor="middle">✓ Feature / benefit 3</text>
+  <text x="540" y="1070" font-family="'Inter',sans-serif" font-size="22"
+        fill="rgba(255,255,255,0.18)" text-anchor="middle">✓ Feature / benefit 4</text>
+
+  <!-- ── Animated-style ring elements ─────────────────────── -->
+  <circle cx="540" cy="1300" r="280" fill="none" stroke="url(#st-primary)"
+          stroke-width="1.5" opacity="0.14"/>
+  <circle cx="540" cy="1300" r="230" fill="none" stroke="#1877F2"
+          stroke-width="1" opacity="0.10"/>
+  <circle cx="540" cy="1300" r="180" fill="none" stroke="#25D366"
+          stroke-width="1" opacity="0.10"/>
+  <!-- Centre icon in ring -->
+  <g transform="translate(490, 1262)">
+    <rect x="0" y="0" width="56" height="40" rx="12" fill="url(#st-logo-g)" opacity="0.9"/>
+    <polygon points="8,40 3,60 27,40" fill="url(#st-logo-g)" opacity="0.8"/>
+    <rect x="26" y="24" width="42" height="30" rx="10" fill="#1877F2" opacity="0.85"/>
+    <polygon points="50,54 57,72 36,54" fill="#1877F2" opacity="0.75"/>
+  </g>
+  <text x="540" y="1400" font-family="'Plus Jakarta Sans','Inter',sans-serif"
+        font-size="30" font-weight="700" fill="rgba(255,255,255,0.6)" text-anchor="middle">
+    AI Always Working
+  </text>
+
+  <!-- ── Swipe-up CTA (bottom area) ────────────────────────── -->
+  <!-- CTA background band -->
+  <rect x="0" y="1720" width="1080" height="200" fill="rgba(0,0,0,0.5)"/>
+  <rect x="0" y="1720" width="1080" height="3"   fill="url(#st-swipe)" opacity="0.8"/>
+
+  <!-- Swipe-up arrow -->
+  <text x="540" y="1780" font-family="'Inter',sans-serif" font-size="28" fill="#B0B0CC"
+        text-anchor="middle">↑  Swipe Up</text>
+
+  <!-- CTA button -->
+  <rect x="240" y="1808" width="600" height="72" rx="36" fill="url(#st-cta)"/>
+  <text x="540" y="1853" font-family="'Plus Jakarta Sans','Inter',sans-serif"
+        font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+    Start Free Trial at smtx.ai →
+  </text>
+</svg>

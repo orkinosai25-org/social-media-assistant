@@ -1,0 +1,166 @@
+/* ============================================================
+   SMTX — Social Media AI Assistant
+   Design Tokens (CSS Custom Properties)
+   ============================================================ */
+
+:root {
+  /* ── Colour: Brand Primaries ──────────────────────────── */
+  --color-purple:          #833AB4;
+  --color-pink:            #E1306C;
+  --color-orange:          #F77737;
+  --color-yellow:          #FCAF45;
+
+  /* ── Colour: Facebook ─────────────────────────────────── */
+  --color-blue:            #1877F2;
+  --color-blue-dark:       #0A66C2;
+
+  /* ── Colour: WhatsApp ─────────────────────────────────── */
+  --color-green:           #25D366;
+  --color-teal:            #075E54;
+
+  /* ── Colour: Brand Roles ──────────────────────────────── */
+  --color-primary:         #833AB4;
+  --color-primary-alt:     #E1306C;
+  --color-secondary:       #1877F2;
+  --color-accent:          #25D366;
+
+  /* ── Colour: Backgrounds ──────────────────────────────── */
+  --color-bg-dark:         #0D0D1A;
+  --color-bg-dark-alt:     #1A0533;
+  --color-bg-light:        #F8F9FF;
+  --color-bg-surface:      #FFFFFF;
+  --color-bg-surface-dark: #16162A;
+
+  /* ── Colour: Text ─────────────────────────────────────── */
+  --color-text-dark:       #1A1A2E;
+  --color-text-muted:      #6B6B8A;
+  --color-text-light:      #FFFFFF;
+  --color-text-light-muted:#B0B0CC;
+
+  /* ── Colour: UI States ────────────────────────────────── */
+  --color-success:         #25D366;
+  --color-warning:         #FCAF45;
+  --color-error:           #E1306C;
+  --color-info:            #1877F2;
+
+  /* ── Gradients ────────────────────────────────────────── */
+  --color-primary-gradient:
+    linear-gradient(135deg, #833AB4 0%, #E1306C 50%, #F77737 100%);
+  --color-hero-gradient:
+    linear-gradient(135deg, #833AB4 0%, #C13584 35%, #E1306C 65%, #F77737 100%);
+  --color-dark-bg-gradient:
+    linear-gradient(160deg, #0D0D1A 0%, #1A0533 100%);
+  --color-blue-gradient:
+    linear-gradient(135deg, #1877F2 0%, #0A66C2 100%);
+  --color-green-gradient:
+    linear-gradient(135deg, #25D366 0%, #075E54 100%);
+  --color-rainbow-gradient:
+    linear-gradient(135deg, #833AB4 0%, #E1306C 33%, #1877F2 66%, #25D366 100%);
+
+  /* ── Typography ───────────────────────────────────────── */
+  --font-heading:          'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  --font-body:             'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono:             'JetBrains Mono', 'Fira Code', monospace;
+
+  /* ── Type Scale ───────────────────────────────────────── */
+  --text-xs:    0.75rem;   /* 12px */
+  --text-sm:    0.875rem;  /* 14px */
+  --text-base:  1rem;      /* 16px */
+  --text-lg:    1.125rem;  /* 18px */
+  --text-xl:    1.25rem;   /* 20px */
+  --text-2xl:   1.5rem;    /* 24px */
+  --text-3xl:   1.875rem;  /* 30px */
+  --text-4xl:   2.25rem;   /* 36px */
+  --text-5xl:   3rem;      /* 48px */
+  --text-6xl:   3.75rem;   /* 60px */
+  --text-7xl:   4.5rem;    /* 72px */
+
+  /* ── Font Weights ─────────────────────────────────────── */
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-extrabold:800;
+
+  /* ── Line Heights ─────────────────────────────────────── */
+  --leading-none:   1;
+  --leading-tight:  1.25;
+  --leading-snug:   1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.625;
+  --leading-loose:  2;
+
+  /* ── Letter Spacing ───────────────────────────────────── */
+  --tracking-tighter: -0.05em;
+  --tracking-tight:   -0.025em;
+  --tracking-normal:   0em;
+  --tracking-wide:     0.025em;
+  --tracking-wider:    0.05em;
+  --tracking-widest:   0.1em;
+
+  /* ── Spacing ──────────────────────────────────────────── */
+  --space-1:   0.25rem;   /* 4px  */
+  --space-2:   0.5rem;    /* 8px  */
+  --space-3:   0.75rem;   /* 12px */
+  --space-4:   1rem;      /* 16px */
+  --space-5:   1.25rem;   /* 20px */
+  --space-6:   1.5rem;    /* 24px */
+  --space-8:   2rem;      /* 32px */
+  --space-10:  2.5rem;    /* 40px */
+  --space-12:  3rem;      /* 48px */
+  --space-16:  4rem;      /* 64px */
+  --space-20:  5rem;      /* 80px */
+  --space-24:  6rem;      /* 96px */
+  --space-32:  8rem;      /* 128px */
+
+  /* ── Border Radius ────────────────────────────────────── */
+  --radius-sm:   0.25rem;  /* 4px  */
+  --radius-md:   0.5rem;   /* 8px  */
+  --radius-lg:   0.75rem;  /* 12px */
+  --radius-xl:   1rem;     /* 16px */
+  --radius-2xl:  1.5rem;   /* 24px */
+  --radius-3xl:  2rem;     /* 32px */
+  --radius-full: 9999px;
+
+  /* ── Shadows ──────────────────────────────────────────── */
+  --shadow-sm:
+    0 1px 2px rgba(0, 0, 0, 0.12);
+  --shadow-md:
+    0 4px 6px rgba(0, 0, 0, 0.16),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-lg:
+    0 10px 15px rgba(0, 0, 0, 0.20),
+    0 4px 6px rgba(0, 0, 0, 0.10);
+  --shadow-xl:
+    0 20px 25px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.08);
+  --shadow-glow-primary:
+    0 0 24px rgba(131, 58, 180, 0.45);
+  --shadow-glow-accent:
+    0 0 24px rgba(37, 211, 102, 0.45);
+
+  /* ── Transitions ──────────────────────────────────────── */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* ── Z-Index ──────────────────────────────────────────── */
+  --z-below:    -1;
+  --z-base:      0;
+  --z-raised:   10;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-overlay:  300;
+  --z-modal:    400;
+  --z-toast:    500;
+  --z-tooltip:  600;
+}
+
+/* ── Dark Mode Overrides ────────────────────────────────── */
+[data-theme="dark"],
+.dark {
+  --color-bg-surface:      #16162A;
+  --color-bg-surface-dark: #0D0D1A;
+  --color-text-dark:       #F8F9FF;
+  --color-text-muted:      #B0B0CC;
+}
