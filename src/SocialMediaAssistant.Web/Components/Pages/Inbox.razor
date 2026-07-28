@@ -1,0 +1,61 @@
+@page "/inbox"
+@attribute [Authorize]
+@inject IConversationRepository ConversationRepository
+
+<PageTitle>Inbox — Social Media Assistant</PageTitle>
+
+<h1 class="mb-4">💬 Inbox</h1>
+
+@if (_conversations is null)
+{
+    <p>Loading conversations...</p>
+}
+else if (!_conversations.Any())
+{
+    <p class="text-muted">No conversations yet.</p>
+}
+else
+{
+    <div class="list-group">
+        @foreach (var conversation in _conversations)
+        {
+            <a href="/inbox/@conversation.Id" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h6 class="mb-1">@conversation.CustomerName</h6>
+                    <small>@conversation.UpdatedAt.ToString("HH:mm")</small>
+                </div>
+                <small class="text-muted d-flex gap-2">
+                    <span class="badge @GetChannelBadgeClass(conversation.Channel)">@conversation.Channel</span>
+                    <span class="badge @GetStatusBadgeClass(conversation.Status)">@conversation.Status</span>
+                    <span>@conversation.Messages.Count message(s)</span>
+                </small>
+            </a>
+        }
+    </div>
+}
+
+@code {
+    private IEnumerable<Conversation>? _conversations;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var sellerId = Guid.Empty;
+        _conversations = await ConversationRepository.GetBySellerIdAsync(sellerId);
+    }
+
+    private static string GetChannelBadgeClass(MessageChannel channel) => channel switch
+    {
+        MessageChannel.Instagram => "bg-danger",
+        MessageChannel.Facebook => "bg-primary",
+        MessageChannel.WhatsApp => "bg-success",
+        _ => "bg-secondary"
+    };
+
+    private static string GetStatusBadgeClass(ConversationStatus status) => status switch
+    {
+        ConversationStatus.AiReplied => "bg-success",
+        ConversationStatus.NeedsReview => "bg-warning",
+        ConversationStatus.Resolved => "bg-secondary",
+        _ => "bg-info"
+    };
+}
