@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60" role="img" aria-labelledby="logo-dark-title logo-dark-desc">
+  <title id="logo-dark-title">SMTX Social Media AI Assistant — Dark Variant</title>
+  <desc id="logo-dark-desc">SMTX logo on dark background: gradient icon with white wordmark</desc>
+  <defs>
+    <linearGradient id="grad-icon-d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#833AB4"/>
+      <stop offset="50%"  stop-color="#E1306C"/>
+      <stop offset="100%" stop-color="#1877F2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark background pill -->
+  <rect width="200" height="60" rx="12" fill="#0D0D1A"/>
+
+  <!-- Icon -->
+  <rect x="8" y="8" width="36" height="24" rx="8" ry="8" fill="url(#grad-icon-d)" opacity="0.95"/>
+  <polygon points="14,32 10,42 24,32" fill="url(#grad-icon-d)" opacity="0.85"/>
+  <rect x="20" y="20" width="26" height="18" rx="6" ry="6" fill="#1877F2" opacity="0.85"/>
+  <polygon points="34,38 38,47 27,38" fill="#1877F2" opacity="0.75"/>
+  <!-- Spark -->
+  <circle cx="50" cy="10" r="3"   fill="#25D366" opacity="0.92"/>
+  <circle cx="56" cy="5"  r="2"   fill="#FCAF45" opacity="0.88"/>
+  <circle cx="54" cy="16" r="1.5" fill="#E1306C" opacity="0.82"/>
+
+  <!-- White wordmark -->
+  <text x="68" y="40" font-family="'Plus Jakarta Sans', 'Inter', sans-serif"
+        font-size="26" font-weight="800" letter-spacing="-0.5"
+        fill="#FFFFFF">SMTX</text>
+</svg>
