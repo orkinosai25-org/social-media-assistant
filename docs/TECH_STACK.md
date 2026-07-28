@@ -4,18 +4,16 @@
 
 ```
 ┌─────────────────────────────────────────────┐
-│              Seller Dashboard               │
-│           (React / Next.js)                 │
+│          Seller Dashboard (Blazor)          │
 └────────────────────┬────────────────────────┘
                      │
 ┌────────────────────▼────────────────────────┐
-│             Backend API                     │
-│           (Python / FastAPI)                │
+│          ASP.NET Core API + Webhooks        │
 └──────┬───────────────┬───────────────┬──────┘
        │               │               │
 ┌──────▼──────┐ ┌──────▼──────┐ ┌─────▼──────┐
-│  Meta API   │ │ Azure OpenAI│ │  Stock DB  │
-│ (IG/FB/WA)  │ │  (GPT-4o)   │ │ (Postgres) │
+│  Meta API   │ │ Azure OpenAI│ │ PostgreSQL │
+│ (IG/FB/WA)  │ │  (GPT-4o)   │ │ + Redis    │
 └─────────────┘ └─────────────┘ └────────────┘
 ```
 
@@ -23,30 +21,37 @@
 
 | Layer | Technology | Notes |
 |---|---|---|
-| **Frontend** | React / Next.js | Seller dashboard UI |
-| **Backend** | Python (FastAPI) | REST API + webhooks |
+| **Frontend** | ASP.NET Core Blazor Web App | Seller dashboard UI |
+| **Backend** | ASP.NET Core Web API | REST API + Meta webhooks |
+| **Domain** | .NET 9 class libraries | Core entities, services, DTOs |
 | **AI Engine** | Azure OpenAI (GPT-4o) | Message understanding & replies |
 | **Messaging** | Meta Graph API | Instagram, Facebook, WhatsApp |
-| **Database** | Azure PostgreSQL | Conversations, orders, stock |
-| **Cache** | Redis | Session state, rate limiting |
-| **Hosting** | Azure App Service / AKS | Scalable, enterprise-grade |
-| **Auth** | Azure AD B2C | Multi-tenant SaaS auth |
-| **Storage** | Azure Blob Storage | Product images, attachments |
+| **Database** | PostgreSQL + EF Core | Conversations, catalog, tenant data |
+| **Cache** | Redis | Queue/cache integration point |
+| **Hosting** | Docker / Azure App Service / AKS | Containerized deployment |
+| **Auth** | Azure AD B2C | Multi-tenant SaaS authentication |
+
+## Solution Layout
+
+- **SocialMediaAssistant.Core** — domain entities, repository contracts, and orchestration services
+- **SocialMediaAssistant.Shared** — DTOs and shared constants
+- **SocialMediaAssistant.Infrastructure** — EF Core, Azure OpenAI, Redis, messaging adapters, background worker
+- **SocialMediaAssistant.Api** — webhook/API host
+- **SocialMediaAssistant.Web** — Blazor dashboard
+- **Tests** — unit and integration coverage for core flows and API verification
 
 ## Meta API Integrations
 
 | Platform | API | Use Case |
 |---|---|---|
-| Instagram | Instagram Graph API | DMs, story replies, comments |
-| Facebook | Messenger Platform API | Page messages, comments |
-| WhatsApp | WhatsApp Business Cloud API | Customer messaging, broadcasts |
+| Instagram | Instagram Graph API | DMs and webhook ingestion |
+| Facebook | Messenger Platform API | Page messaging |
+| WhatsApp | WhatsApp Business Cloud API | Customer messaging |
 
 ## Azure Services Used
 
 - **Azure OpenAI** — GPT-4o for AI replies
-- **Azure App Service** — Backend hosting
-- **Azure PostgreSQL Flexible Server** — Main database
-- **Azure Cache for Redis** — Session caching
-- **Azure AD B2C** — Customer authentication
-- **Azure Blob Storage** — File storage
-- **Azure Monitor** — Logging & alerting
+- **Azure Database for PostgreSQL** — Main relational store
+- **Azure Cache for Redis** — Low-latency cache and queue support
+- **Azure AD B2C** — Seller authentication
+- **Azure Monitor / Application Insights** — Observability and alerting

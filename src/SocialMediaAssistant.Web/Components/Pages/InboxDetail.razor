@@ -1,0 +1,43 @@
+@page "/inbox/{ConversationId:guid}"
+@attribute [Authorize]
+@inject IConversationRepository ConversationRepository
+
+<PageTitle>Conversation — Social Media Assistant</PageTitle>
+
+<h1 class="mb-4">🧵 Conversation</h1>
+
+@if (_conversation is null)
+{
+    <p class="text-muted">Conversation not found.</p>
+}
+else
+{
+    <div class="card">
+        <div class="card-header d-flex justify-content-between">
+            <span>@_conversation.CustomerName</span>
+            <span class="badge bg-secondary">@_conversation.Channel</span>
+        </div>
+        <div class="card-body d-flex flex-column gap-3">
+            @foreach (var message in _conversation.Messages.OrderBy(m => m.SentAt))
+            {
+                <div class="border rounded p-3 @(message.Role == MessageRole.Customer ? "bg-light" : "bg-primary text-white")">
+                    <div class="small fw-bold mb-1">@(message.Role == MessageRole.Customer ? "Customer" : "Assistant")</div>
+                    <div>@message.Content</div>
+                    <div class="small mt-2 opacity-75">@message.SentAt.ToString("g")</div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public Guid ConversationId { get; set; }
+
+    private Conversation? _conversation;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        _conversation = await ConversationRepository.GetByIdAsync(ConversationId);
+    }
+}

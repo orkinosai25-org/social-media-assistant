@@ -1,0 +1,57 @@
+@page "/dashboard"
+@attribute [Authorize]
+
+<PageTitle>Dashboard — Social Media Assistant</PageTitle>
+
+<h1 class="mb-4">📊 Dashboard</h1>
+
+<div class="row g-3 mb-4">
+    <div class="col-md-3">
+        <div class="card text-white bg-primary">
+            <div class="card-body">
+                <h5 class="card-title">Messages Today</h5>
+                <p class="card-text display-6">@MessagesToday</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-success">
+            <div class="card-body">
+                <h5 class="card-title">AI Replies Sent</h5>
+                <p class="card-text display-6">@RepliesSent</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-warning">
+            <div class="card-body">
+                <h5 class="card-title">Needs Review</h5>
+                <p class="card-text display-6">@NeedsReview</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-info">
+            <div class="card-body">
+                <h5 class="card-title">Conversion Rate</h5>
+                <p class="card-text display-6">@ConversionRate%</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private int MessagesToday = 0;
+    private int RepliesSent = 0;
+    private int NeedsReview = 0;
+    private decimal ConversionRate = 0;
+
+    protected override Task OnInitializedAsync()
+    {
+        MessagesToday = 142;
+        RepliesSent = 138;
+        NeedsReview = 4;
+        ConversionRate = 23.5m;
+        return Task.CompletedTask;
+    }
+}

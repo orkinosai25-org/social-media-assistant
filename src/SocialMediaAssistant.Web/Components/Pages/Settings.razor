@@ -1,0 +1,26 @@
+@page "/settings"
+@attribute [Authorize]
+
+<PageTitle>Settings — Social Media Assistant</PageTitle>
+
+<h1 class="mb-4">⚙️ Settings</h1>
+
+<div class="card mb-3">
+    <div class="card-header">Connected Accounts</div>
+    <div class="card-body">
+        <p class="text-muted">Connect your social media accounts to start receiving messages.</p>
+        <div class="d-flex gap-2 flex-wrap">
+            <button class="btn btn-outline-danger" disabled>Connect Instagram</button>
+            <button class="btn btn-outline-primary" disabled>Connect Facebook</button>
+            <button class="btn btn-outline-success" disabled>Connect WhatsApp</button>
+        </div>
+    </div>
+</div>
+
+<div class="card mb-3">
+    <div class="card-header">Subscription Plan</div>
+    <div class="card-body">
+        <p>Current plan: <strong>Pro</strong></p>
+        <button class="btn btn-outline-primary" disabled>Upgrade Plan</button>
+    </div>
+</div>

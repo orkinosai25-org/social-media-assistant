@@ -1,0 +1,58 @@
+@page "/products"
+@attribute [Authorize]
+@inject IStockService StockService
+
+<PageTitle>Products — Social Media Assistant</PageTitle>
+
+<h1 class="mb-4">📦 Products &amp; Stock</h1>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <p class="text-muted mb-0">Use this starter inventory view to validate stock-aware replies and future catalog workflows.</p>
+    <button class="btn btn-primary" disabled>+ Add Product</button>
+</div>
+
+@if (_products is null)
+{
+    <p>Loading products...</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>SKU</th>
+                <th>Color</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in _products)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td><code>@product.SKU</code></td>
+                    <td>@(product.Color ?? "—")</td>
+                    <td>@(product.Size ?? "—")</td>
+                    <td>@product.Price.ToString("C")</td>
+                    <td>
+                        <span class="badge @(product.StockCount > 0 ? "bg-success" : "bg-danger")">@product.StockCount</span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IEnumerable<ProductDto>? _products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var sellerId = Guid.Empty;
+        var products = await StockService.GetProductsAsync(sellerId);
+        _products = products.Select(p => new ProductDto(p.Id, p.Name, p.SKU, p.Color, p.Size, p.StockCount, p.Price, p.Description));
+    }
+}
